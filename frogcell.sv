@@ -1,0 +1,7 @@
+module frogcell(
+	input logic clock, reset,
+	input logic l, d, u, r,
+	output logic ison
+);
+
+endmodule 

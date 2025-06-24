@@ -1,0 +1,5 @@
+module frogdis_tb();
+
+	logic clock, reset, l, d, r, u;
+	
+endmodule 

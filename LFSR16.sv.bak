@@ -1,0 +1,13 @@
+module LFSR16(
+	input logic clock, reset,
+	output logic [15:0] random
+);
+	
+	always_ff @(posedge clock) 
+		if(reset)
+			random <= 9'b000000000;
+		else
+			random <= {random[14:0], ~(random[15] ^ random[14] ^ random[12] ^ random[4])};
+		
+endmodule 
+);

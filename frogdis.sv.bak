@@ -1,0 +1,5 @@
+module frogdis(
+	input logic clock, reset,
+	input logic l, d, u, r,
+	output logic [15:0][15:0] frog
+);
